@@ -1,1 +1,24 @@
 Reconcile Scenarios:-
+
+Delete/disable:-
+
+1.User should be there in AD and is not there in application-User should be deleted/disabled in AD-Done
+2.User is there in both AD and application and delete that user in AD-User be add back to AD.- Not Working 
+3.User is there in Both AD and application and change user details in AD-User should be deleted or disabled.-Not Working 
+
+Isoverride:-
+
+1.User is there in both AD and application and change details in AD-Changed details should be overridden with Application details.-> Not working
+2.User should be there in AD and is not there in application-User should be displayed in Orphan users.-> Done
+3.User is there in both AD and application and delete that user in AD-User is add back to AD.
+4.User is there in both AD and application( Not provisioned)-Provision should happen if details are matched.-Done
+
+5.Disable an active user in AD-User should active after recon.-> Not Working
+
+InGest:-
+
+1.User is there in both AD and application( Not provisioned)-Provision should happen if details are matched.-> Done
+
+IsFlag:-
+
+1.User is there in both AD and application( Not provisioned).-> Done
